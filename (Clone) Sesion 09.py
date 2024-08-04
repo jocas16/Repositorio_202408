@@ -7,6 +7,7 @@ spark.sql(f"CREATE DATABASE IF NOT EXISTS {db}")
 # Seleccionar la base de datos
 spark.sql(f"USE {db}")
 
+
 # Preparar base de datos y configurar para habilitar Delta Lake
 spark.sql("SET spark.databricks.delta.formatCheck.enabled = false")
 spark.sql("SET spark.databricks.delta.properties.autoOptimize.optimizeWrite = true")
